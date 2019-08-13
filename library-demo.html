@@ -1,0 +1,19 @@
+<meta charset="utf-8">
+<title>bf demo</title>
+<script src="https://unpkg.com/vue@latest"></script>
+<script src="./dist/bf.umd.js"></script>
+
+<link rel="stylesheet" href="./dist/bf.css">
+
+<div id="app">
+    <banner>Hello!</banner>
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        components: {
+            ...window.bf.default
+        },
+    });
+</script>

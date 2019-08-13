@@ -1,12 +1,21 @@
 {
-  "name": "vue-component-poc",
+  "name": "@blackfynn/components",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build-library": "vue-cli-service build --target lib --name bf ./src/components/index.js",
     "lint": "vue-cli-service lint"
   },
+  "main": "./dist/bf.umd.js",
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
+  ],
   "dependencies": {
     "core-js": "^2.6.5",
     "vue": "^2.6.10"

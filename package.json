@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build-library": "vue-cli-service build --target lib --name bf ./src/components/index.js",
+    "build-library": "vue-cli-service build --dest ./dist/lib --target lib --name bf ./src/components/index.js",
     "lint": "vue-cli-service lint"
   },
   "main": "./dist/bf.umd.js",

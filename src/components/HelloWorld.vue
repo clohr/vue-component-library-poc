@@ -34,6 +34,9 @@
 <script>
 export default {
   name: 'HelloWorld',
+  components: {
+    ...window.bf.default
+  },
   props: {
     msg: String
   }
